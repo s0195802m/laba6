@@ -162,8 +162,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <header>
         <div class="container">
             <h1>📡 Программно-аппаратные средства Web</h1>
-            <p class="subtitle">(с) Сергей Синица 2020</p>
-            <h2>Редактирование анкеты #<?php echo $id; ?></h2>
             <p class="student-info">Администратор: <?php echo htmlspecialchars($adminLogin); ?></p>
         </div>
     </header>
