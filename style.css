@@ -1,0 +1,262 @@
+/* style.css — Pink theme для lab4 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    background-color: #ffe4ec;
+    color: #4a2a3a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #f8b0c0, #f48fb1);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #f06292;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.student-info {
+    background-color: rgba(255,255,255,0.2);
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+/* Main */
+main {
+    padding: 2rem 0;
+}
+
+.intro {
+    background-color: #fff0f3;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    border-left: 8px solid #f06292;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Form */
+.application-form {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(240, 98, 146, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #d81b60;
+}
+
+.required {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ffccd9;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #f06292;
+    box-shadow: 0 0 0 3px rgba(240, 98, 146, 0.2);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: #9b4b6e;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: normal !important;
+}
+
+.checkbox-label input {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+select[multiple] {
+    min-height: 150px;
+}
+
+select[multiple] option {
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+select[multiple] option:checked {
+    background: #f06292 linear-gradient(0deg, #f06292, #f06292);
+    color: white;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #f06292, #d81b60);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(216, 27, 96, 0.4);
+}
+
+/* Action buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    background: linear-gradient(135deg, #f06292, #d81b60);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.action-btn.secondary {
+    background: linear-gradient(135deg, #b0bec5, #90a4ae);
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #f8b0c0;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #f06292;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .application-form {
+        padding: 1.5rem;
+    }
+    .radio-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+   
+
+}
+/* Добавьте в конец style.css */
+
+/* Админ-панель */
+.error-summary {
+    background: #ffebee;
+    border-left: 5px solid #f44336;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+.error-summary ul {
+    margin: 0.5rem 0 0 1.5rem;
+}
+.error-summary li {
+    color: #c62828;
+}
+
+/* Кнопка админ-панели */
+.action-btn.admin {
+    background: linear-gradient(135deg, #ff9800, #f57c00);
+}
+.action-btn.admin:hover {
+    box-shadow: 0 6px 14px rgba(255, 152, 0, 0.4);
+}
